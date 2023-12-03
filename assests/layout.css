@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    text-align: center;
+    background-color: #7B66FF;
+    padding: 1.2rem;
+    margin-bottom: 15vh;
+}
+
+nav a {
+    margin-right: 1vw;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 1vw;
+}
+
+nav a:hover {
+    background: #6150cd;
+}
+
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+nav a:visited {
+    color: white;
+}
+
+#about {
+    font-family: verdana, sans-serif;
+    display: flex;
+    padding: 0 10vw 0 10vw;
+}
+
+#about img {
+    border-radius: 50%;
+    height: 59vh;
+    transition: 0.5s box-shadow, 0.5s border;
+    border: 7px solid transparent;
+    box-shadow: 1vw -1vw #3a90ce;
+
+}
+
+#about img:hover {
+    box-shadow: none;
+    cursor: pointer;
+    border: 15px solid transparent;
+}
+
+.innerAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5vw;
+}
+
+.innerAbout p:first-child {
+    font-size: 4.3em;
+    line-height: 1em;
+    margin-bottom: 4vh;
+}
+
+.innerAbout p:nth-child(2) {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-bottom: 3vh;
+}
+
+.innerAbout a:visited {
+    color: white;
+}
+
+.innerAbout a {
+    text-decoration: none;
+    display: inline-block !important;
+    padding: 1rem;
+    background-color: #3a90ce;
+    border-radius: 5vw;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.innerAbout a:hover {
+    background-color: #5FBDFF;
+    transform: scale(1.05);
+    /* Optional: Add a subtle scaling effect on hover */
+}
