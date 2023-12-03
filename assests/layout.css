@@ -3,12 +3,23 @@
     box-sizing: border-box;
 }
 
+body{
+    height: 7000px;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+
 nav {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
     text-align: center;
     background-color: #7B66FF;
     padding: 1.2rem;
-    margin-bottom: 15vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 nav a {
@@ -32,9 +43,11 @@ nav a:visited {
 }
 
 #about {
+    margin-top: 30vh;
     font-family: verdana, sans-serif;
     display: flex;
     padding: 0 10vw 0 10vw;
+    margin-bottom: 15vh;
 }
 
 #about img {
@@ -57,17 +70,19 @@ nav a:visited {
     flex-direction: column;
     justify-content: center;
     padding-left: 5vw;
+    margin-top: 15vh;
+
 }
 
 .innerAbout p:first-child {
-    font-size: 4.3em;
-    line-height: 1em;
+    font-size: 8vh;
+    line-height: 8vh;
     margin-bottom: 4vh;
 }
 
 .innerAbout p:nth-child(2) {
-    font-size: 1.2em;
-    line-height: 1.4em;
+    font-size: 3.2vh;
+    line-height: 4vh;
     margin-bottom: 3vh;
 }
 
@@ -78,7 +93,7 @@ nav a:visited {
 .innerAbout a {
     text-decoration: none;
     display: inline-block !important;
-    padding: 1rem;
+    padding: 3vh;
     background-color: #3a90ce;
     border-radius: 5vw;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -89,3 +104,4 @@ nav a:visited {
     transform: scale(1.05);
     /* Optional: Add a subtle scaling effect on hover */
 }
+
