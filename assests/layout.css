@@ -22,6 +22,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 nav a {
@@ -107,3 +108,62 @@ nav a:visited {
     transform: scale(1.05);
 }
 
+.titleDiv {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    line-height: 3vh;
+    margin-bottom: 15vh;
+}
+
+#skills p {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+
+.container {
+    display: flex;
+    width: 80%;
+
+}
+
+.sub-div {
+    flex: 1;
+    padding: 3rem;
+    background: whitesmoke;
+    text-align: center;
+    margin-right: 2vw;
+    margin-bottom: 2vw;
+    border-radius: 1.5vw;
+    box-shadow: 1vh 1vh 5vh rgba(0, 0, 0, 0.276);
+    transition: 0.4s box-shadow, 0.5s transform;
+    /* max-width: 30%; */
+}
+
+.sub-div:hover {
+    box-shadow: none;
+    transform: translate(0vh, -2vh);
+    box-shadow: 1vh 1vh 4vh #000000;
+
+}
+
+.sub-div:last-child {
+    margin-right: 0vw;
+}
+
+.sub-div h2 {
+    line-height: 7.5vh;
+    color: #000000be;
+}
+
+.sub-div p {
+    color: grey;
+}
+
+.sub-div img {
+    width: 30%;
+    /* Adjust the width as needed */
+    /* height: auto; */
+    /* Maintain aspect ratio */
+    /* max-width: none; */
+    /* Disable maximum width restriction */
+}
