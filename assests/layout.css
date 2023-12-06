@@ -146,9 +146,8 @@ nav a:visited {
     transition: 0.4s box-shadow, 0.5s transform;
 }
 
-.container:nth-child(2) .sub-div {
+.container:nth-child(3) .sub-div {
     margin-bottom: 15vh;
-
 }
 
 .sub-div:hover {
