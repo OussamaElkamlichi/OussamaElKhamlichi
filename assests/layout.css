@@ -177,5 +177,13 @@ hr {
 
 #projects {
     background: rgba(245, 245, 245, 0.47);
+}
 
+.projet img{
+    height: 30vh;
+}
+
+.projet{
+    display: flex;
+    flex-direction: row;
 }
