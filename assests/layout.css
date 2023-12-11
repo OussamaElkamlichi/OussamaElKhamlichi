@@ -204,7 +204,7 @@ hr {
 .projet:hover {
     box-shadow: 1vh 1vh 6vh rgba(0, 0, 0, 0.616);
     transform: translateY(-1vh);
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .projet:hover img {
@@ -245,23 +245,53 @@ hr {
     color: rgba(0, 0, 0, 0.594);
 }
 
-.info {
+.info-class {
+    font-size: medium;
     color: black;
     background: white;
     border-top-left-radius: 6vh;
     padding: 1rem;
     transition: 0.5s box-shadow, 0.5s transform;
-    margin-bottom: 3vh;
-
+    display: flex;
+    flex-direction: column;
 }
 
-.info:hover {
+.info-class>a {
+    text-decoration: none;
+}
+
+.info-class>a {
+    text-decoration: none;
+    margin: auto;
+    color: #000000;
+    background-image: linear-gradient(90deg, #7B66FF, #7B66FF);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition:  300ms background-size ease-in-out;
+}
+
+.info-class>a:hover {
+    background-size: 100% 2px;
+}
+
+.info-class>img {
+    align-self: flex-end;
+    margin-top: auto;
+    height: 15vh;
+    filter: invert(39%) sepia(46%) saturate(1537%) hue-rotate(220deg) brightness(103%) contrast(101%);
+}
+
+.info-class:hover {
     box-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.616);
     transform: translateY(-1.5vh);
 }
 
 .container-projet {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    font-size: smaller;
     display: flex;
     justify-content: center;
     gap: 5vh;
+    margin-bottom: 15vh;
 }
